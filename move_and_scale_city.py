@@ -1,7 +1,10 @@
 import glob
 from PIL import Image
 
-
+"""
+This script copies the train images from the cityscapes-dataset into a single folder and rescale the images to
+512x256px
+"""
 
 source_folder = glob.glob('/storage/Cityscapes/cityscape_dataset/leftImg8bit/train/*/*.png')
 target_folder = '/home/schober/cityscape_dataset/annotations/darknet_labels_train/images/'
